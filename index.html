@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalimanov | UA ONLINE</title>
+    <title>Kalimanov Space</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --cyan: #00d2ff;
-            --purple: #b44fff;
             --dark: #050a1a;
-            --card-bg: rgba(5, 10, 30, 0.8);
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
-            /* Використовуємо твоє завантажене фото */
-            background-image: linear-gradient(rgba(5, 10, 26, 0.7), rgba(5, 10, 26, 0.7)), url('IMG_20260509_010427_459.jpg');
+            background-image: linear-gradient(rgba(5, 10, 26, 0.75), rgba(5, 10, 26, 0.75)), url('IMG_20260509_010427_459.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -29,116 +24,59 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            overflow-x: hidden;
         }
-
         .container {
             width: 90%;
-            max-width: 420px;
+            max-width: 400px;
             padding: 30px;
-            background: var(--card-bg);
-            border: 1px solid rgba(0, 210, 255, 0.3);
-            border-radius: 24px;
-            backdrop-filter: blur(15px);
+            background: rgba(5, 10, 30, 0.85);
+            border: 1px solid var(--cyan);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
             text-align: center;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
         }
-
         h1 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 24px;
-            font-weight: 900;
             color: var(--cyan);
+            margin-bottom: 30px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 30px;
-            text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
         }
-
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
         .btn {
             display: flex;
             align-items: center;
-            padding: 16px 20px;
+            padding: 15px;
+            margin-bottom: 15px;
             background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 14px;
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            border-radius: 12px;
             text-decoration: none;
             color: white;
-            transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
+            transition: 0.3s;
         }
-
         .btn:hover {
-            background: rgba(0, 210, 255, 0.15);
-            border-color: var(--cyan);
-            transform: scale(1.02) translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.2);
+            background: rgba(0, 210, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
         }
-
-        .btn i {
-            font-size: 20px;
-            width: 30px;
-            margin-right: 15px;
-            color: var(--cyan);
-        }
-
-        .btn span {
-            font-size: 16px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
-        .btn-youtube:hover {
-            border-color: #ff0000;
-            background: rgba(255, 0, 0, 0.1);
-        }
-        .btn-youtube:hover i { color: #ff0000; }
-
-        .footer {
-            margin-top: 30px;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 10px;
-            letter-spacing: 3px;
-            opacity: 0.4;
-            text-transform: uppercase;
-        }
+        .btn i { margin-right: 15px; color: var(--cyan); font-size: 20px; }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Kalimanov Space</h1>
-        
-        <div class="links-container">
+        <div class="links">
             <a href="https://ua-online.games/" class="btn" target="_blank">
-                <i class="fas fa-gamepad"></i>
-                <span>UA ONLINE - Проєкт</span>
+                <i class="fas fa-gamepad"></i> <span>UA ONLINE</span>
             </a>
-
             <a href="https://t.me/KKalimanov" class="btn" target="_blank">
-                <i class="fab fa-telegram-plane"></i>
-                <span>Мій Telegram</span>
+                <i class="fab fa-telegram"></i> <span>Telegram</span>
             </a>
-
-            <a href="https://youtube.com/@kalimanov?si=2TfHVQkSn3paWYNw" class="btn btn-youtube" target="_blank">
-                <i class="fab fa-youtube"></i>
-                <span>YouTube Канал</span>
-            </a>
-
-            <a href="https://sites.google.com/view/uaonline04/" class="btn" target="_blank">
-                <i class="fas fa-database"></i>
-                <span>Інфо-Портал 04</span>
+            <a href="https://youtube.com/@kalimanov" class="btn" target="_blank">
+                <i class="fab fa-youtube"></i> <span>YouTube</span>
             </a>
         </div>
-
-        <div class="footer">System Active // 2026</div>
     </div>
-
 </body>
 </html>
+
